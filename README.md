@@ -1,5 +1,5 @@
 
-
+![alt text](https://github.com/bartektenDev/SliverDuck1.2-MacOS/blob/main/Screen%20Shot%202023-01-29%20at%208.04.50%20PM.png)
 
 # SliverDuck by ⚡ @ios_euphoria ⚡
 ver 1.1
