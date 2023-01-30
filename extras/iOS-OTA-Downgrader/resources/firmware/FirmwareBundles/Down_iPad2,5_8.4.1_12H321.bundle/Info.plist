@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DownloadUrl</key>
+	<string></string>
+	<key>Filename</key>
+	<string>iPad2,5_8.4.1_12H321_Restore.ipsw</string>
+	<key>FilesystemPatches</key>
+	<dict/>
+	<key>FirmwarePatches</key>
+	<dict>
+		<key>Restore Ramdisk</key>
+		<dict>
+			<key>Decrypt</key>
+			<true/>
+			<key>File</key>
+			<string>058-23992-023.dmg</string>
+			<key>IV</key>
+			<string>f8edb59fa278db6a9f28c54c75176294</string>
+			<key>Key</key>
+			<string>ad2da12be31a6f6061069f42223e1df1e3bac83a7f49b839d6a6cb9cdadbb0a5</string>
+			<key>TypeFlag</key>
+			<integer>8</integer>
+		</dict>
+	</dict>
+	<key>Name</key>
+	<string>iPad2,5_8.4.1_12H321</string>
+	<key>Platform</key>
+	<integer>1</integer>
+	<key>RamdiskMountVolume</key>
+	<string>ramdisk</string>
+	<key>RamdiskOptionsPath</key>
+	<string>/usr/local/share/restore/options.p105.plist</string>
+	<key>RamdiskPatches</key>
+	<dict>
+		<key>asr</key>
+		<dict>
+			<key>File</key>
+			<string>usr/sbin/asr</string>
+			<key>Patch</key>
+			<string>asr.patch</string>
+		</dict>
+	</dict>
+	<key>RootFilesystem</key>
+	<string>058-24036-023.dmg</string>
+	<key>RootFilesystemKey</key>
+	<string>21862ddcc49a861ffda17f7c6eca65355d2d1e762026cca60aabc726cd48b9e4cff214ff</string>
+	<key>RootFilesystemMountVolume</key>
+	<string>Donner12H321</string>
+	<key>RootFilesystemSize</key>
+	<integer>1953</integer>
+	<key>SHA1</key>
+	<string>365d4a8e9ea9613c6bdb6db35cba0331580f7ae7</string>
+	<key>SubPlatform</key>
+	<integer>6</integer>
+	<key>needPref</key>
+	<true/>
+</dict>
+</plist>

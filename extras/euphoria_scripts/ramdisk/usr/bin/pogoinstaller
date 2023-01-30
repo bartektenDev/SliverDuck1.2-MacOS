@@ -1,0 +1,331 @@
+set -e
+
+if [ -e /mnt2/mobile ]; then
+    :
+else
+echo "you didn't run mount_filesystems! Or it failed. If so report an issue to SSHRD_Script."
+exit
+fi
+
+if [ "$1" = "Tips" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Tips.app")
+mv ${app}/Tips ${app}/Tips_BACKUP
+cp /usr/Pogo/Pogo ${app}/Tips
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Tips
+chmod 755 ${app}/Tips ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Books" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Books.app")
+mv ${app}/Books ${app}/Books_BACKUP
+cp /usr/Pogo/Pogo ${app}/Books
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Books
+chmod 755 ${app}/Books ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "VoiceMemos" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "VoiceMemos.app")
+mv ${app}/VoiceMemos ${app}/VoiceMemos_BACKUP
+cp /usr/Pogo/Pogo ${app}/VoiceMemos
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/VoiceMemos
+chmod 755 ${app}/VoiceMemos ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Weather" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Weather.app")
+mv ${app}/Weather ${app}/Weather_BACKUP
+cp /usr/Pogo/Pogo ${app}/Weather
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Weather
+chmod 755 ${app}/Weather ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Files" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Files.app")
+mv ${app}/Files ${app}/Files_BACKUP
+cp /usr/Pogo/Pogo ${app}/Files
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Files
+chmod 755 ${app}/Files ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Mail" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "MobileMail.app")
+mv ${app}/MobileMail ${app}/MobileMail_BACKUP
+cp /usr/Pogo/Pogo ${app}/MobileMail
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/MobileMail
+chmod 755 ${app}/MobileMail ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Home" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Home.app")
+mv ${app}/Home ${app}/Home_BACKUP
+cp /usr/Pogo/Pogo ${app}/Home
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Home
+chmod 755 ${app}/Home ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Calculator" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Calculator.app")
+mv ${app}/Calculator ${app}/Calculator_BACKUP
+cp /usr/Pogo/Pogo ${app}/Calculator
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Calculator
+chmod 755 ${app}/Calculator ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Stocks" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Stocks.app")
+mv ${app}/Stocks ${app}/Stocks_BACKUP
+cp /usr/Pogo/Pogo ${app}/Stocks
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Stocks
+chmod 755 ${app}/Stocks ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Maps" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Maps.app")
+mv ${app}/Maps ${app}/Maps_BACKUP
+cp /usr/Pogo/Pogo ${app}/Maps
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Maps
+chmod 755 ${app}/Maps ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Measure" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Measure.app")
+mv ${app}/Measure ${app}/Measure_BACKUP
+cp /usr/Pogo/Pogo ${app}/Measure
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Measure
+chmod 755 ${app}/Measure ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Translate" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "SequoiaTranslator.app")
+mv ${app}/SequoiaTranslator ${app}/SequoiaTranslator_BACKUP
+cp /usr/Pogo/Pogo ${app}/SequoiaTranslator
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/SequoiaTranslator
+chmod 755 ${app}/SequoiaTranslator ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "FaceTime" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "FaceTime.app")
+mv ${app}/FaceTime ${app}/FaceTime_BACKUP
+cp /usr/Pogo/Pogo ${app}/FaceTime
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/FaceTime
+chmod 755 ${app}/FaceTime ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Contacts" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Contacts.app")
+mv ${app}/Contacts ${app}/Contacts_BACKUP
+cp /usr/Pogo/Pogo ${app}/Contacts
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Contacts
+chmod 755 ${app}/Contacts ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Magnifier" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Magnifier.app")
+mv ${app}/Magnifier ${app}/Magnifier_BACKUP
+cp /usr/Pogo/Pogo ${app}/Magnifier
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Magnifier
+chmod 755 ${app}/Magnifier ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "iTunes" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "MobileStore.app")
+mv ${app}/MobileStore ${app}/MobileStore_BACKUP
+cp /usr/Pogo/Pogo ${app}/MobileStore
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/MobileStore
+chmod 755 ${app}/MobileStore ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Shortcuts" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Shortcuts.app")
+mv ${app}/Shortcuts ${app}/Shortcuts_BACKUP
+cp /usr/Pogo/Pogo ${app}/Shortcuts
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Shortcuts
+chmod 755 ${app}/Shortcuts ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "TV" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "AppleTV.app")
+mv ${app}/AppleTV ${app}/AppleTV_BACKUP
+cp /usr/Pogo/Pogo ${app}/AppleTV
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/AppleTV
+chmod 755 ${app}/AppleTV ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Music" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Music.app")
+mv ${app}/Music ${app}/Music_BACKUP
+cp /usr/Pogo/Pogo ${app}/Music
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Music
+chmod 755 ${app}/Music ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Notes" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "MobileNotes.app")
+mv ${app}/MobileNotes ${app}/MobileNotes_BACKUP
+cp /usr/Pogo/Pogo ${app}/MobileNotes
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/MobileNotes
+chmod 755 ${app}/MobileNotes ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Calendar" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "MobileCal.app")
+mv ${app}/MobileCal ${app}/MobileCal_BACKUP
+cp /usr/Pogo/Pogo ${app}/MobileCal
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/MobileCal
+chmod 755 ${app}/MobileCal ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Reminders" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Reminders.app")
+mv ${app}/Reminders ${app}/Reminders_BACKUP
+cp /usr/Pogo/Pogo ${app}/Reminders
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Reminders
+chmod 755 ${app}/Reminders ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+if [ "$1" = "Podcasts" ]; then
+app=$(find /mnt2/containers/Bundle/Application/ -name "Podcasts.app")
+mv ${app}/Podcasts ${app}/Podcasts_BACKUP
+cp /usr/Pogo/Pogo ${app}/Podcasts
+cp /usr/Pogo/PogoHelper $app
+chown 33 ${app}/Podcasts
+chmod 755 ${app}/Podcasts ${app}/PogoHelper
+chown 0 ${app}/PogoHelper
+cp /usr/Pogo/bootstrap.tar ${app}
+cp /usr/Pogo/org.coolstar.sileo_2.4_iphoneos-arm64.deb ${app}
+echo "done"
+exit
+fi
+
+echo "not a uninstallable system app?"

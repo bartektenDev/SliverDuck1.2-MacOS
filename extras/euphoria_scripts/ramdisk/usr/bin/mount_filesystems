@@ -1,0 +1,111 @@
+if [[ $(/usr/bin/sw_vers | grep ProductVersion | sed 's/ProductVersion: //') == "16"* ]]; then
+/sbin/mount_apfs /dev/disk1s1 /mnt1
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s3) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk1s3 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s4) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk1s4 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s5) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk1s5 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s6) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk1s6 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s7) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk1s7 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s3) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk1s3 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s4) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk1s4 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s5) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk1s5 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s6) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk1s6 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk1s7) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk1s7 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ -e /mnt6/active ]]; then
+/usr/libexec/seputil --load /mnt6/$(cat /mnt6/active)/usr/standalone/firmware/sep-firmware.img4
+else
+/usr/libexec/seputil --load /mnt1/usr/standalone/firmware/sep-firmware.img4
+fi
+/sbin/mount_apfs /dev/disk1s2 /mnt2
+
+else
+
+/sbin/mount_apfs /dev/disk0s1s1 /mnt1
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s3) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk0s1s3 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s4) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk0s1s4 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s5) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk0s1s5 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s6) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk0s1s6 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s7) == 'Preboot' ]]; then
+/sbin/mount_apfs /dev/disk0s1s7 /mnt6
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s3) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk0s1s3 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s4) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk0s1s4 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s5) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk0s1s5 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s6) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk0s1s6 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ $(/System/Library/Filesystems/apfs.fs/apfs.util -p /dev/disk0s1s7) == 'xART' ]]; then
+/sbin/mount_apfs /dev/disk0s1s7 /mnt7
+/usr/libexec/seputil --gigalocker-init
+fi
+
+if [[ -e /mnt6/active ]]; then
+/usr/libexec/seputil --load /mnt6/$(cat /mnt6/active)/usr/standalone/firmware/sep-firmware.img4
+else
+/usr/libexec/seputil --load /mnt1/usr/standalone/firmware/sep-firmware.img4
+fi
+/sbin/mount_apfs /dev/disk0s1s2 /mnt2
+fi

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RootFilesystem</key>
+	<string>048-2475-005.dmg</string>
+	<key>RootFilesystemSize</key>
+	<integer>1088</integer>
+	<key>Filename</key>
+	<string>iPad2,2_6.1.3_10B329_Restore.ipsw</string>
+	<key>RamdiskMountVolume</key>
+	<string>ramdisk</string>
+	<key>Name</key>
+	<string>iPhone2,2_6.1.3_10B329</string>
+	<key>SubPlatform</key>
+	<integer>6</integer>
+	<key>Platform</key>
+	<integer>1</integer>
+	<key>RamdiskOptionsPath</key>
+	<string>/usr/local/share/restore/options.k94.plist</string>
+	<key>SHA1</key>
+	<string>1b7897aea7b23d2e00e3d3c5c0ad2a0c47b345cd</string>
+	<key>RamdiskPatches</key>
+	<dict>
+		<key>asr</key>
+		<dict>
+			<key>File</key>
+			<string>usr/sbin/asr</string>
+			<key>Patch</key>
+			<string>asr.patch</string>
+		</dict>
+	</dict>
+	<key>DownloadUrl</key>
+	<string></string>
+	<key>FilesystemPatches</key>
+	<dict/>
+	<key>RootFilesystemMountVolume</key>
+	<string>BrightonMaps10B329.K94OS</string>
+	<key>FirmwarePatches</key>
+	<dict>
+		<key>Restore Ramdisk</key>
+		<dict>
+			<key>File</key>
+			<string>048-2516-005.dmg</string>
+			<key>Key</key>
+			<string>66affb95fd5f5e9b976cee5822c563dd111069746f13200c5641c500600f1426</string>
+			<key>Decrypt</key>
+			<true/>
+			<key>TypeFlag</key>
+			<integer>8</integer>
+			<key>IV</key>
+			<string>b59813148a1246ef4f4e3a5aa70ac471</string>
+		</dict>
+	</dict>
+	<key>RootFilesystemKey</key>
+	<string>19703b03962ad004afeab0f80fcff0dd2e3ddca02c9f0e08bcd635884e941797c0b9dece</string>
+	<key>needPref</key>
+	<true/>
+</dict>
+</plist>

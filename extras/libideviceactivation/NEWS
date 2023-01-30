@@ -1,0 +1,59 @@
+Version 1.1.1
+~~~~~~~~~~~~~
+
+* Changes:
+  - Ignore SIGPIPE signal
+  - Add "--network" and "--version" options to ideviceactivation tool
+  - Bump libimobiledevice dependency to 1.3.0
+  - Bump libplist dependency to 2.2.0
+  - Improve README.md with project description, installation, contributing and
+    usage sections
+  - Rename library and all related files by adding an API version resulting
+    in "libideviceactivation-1.0"
+
+Version 1.1.0
+~~~~~~~~~~~~~
+
+* Changes:
+  - Updated to use new mobileactivation service (requires latest libimobiledevice),
+    introducing 'drmHandshake' / session mode for activating newer devices
+  - Add API calls to query if an input field is secure and to get its placeholder (buddyml)
+  - Mask input on console when querying secure input fields
+  - Fix parsing of updated activation lock buddyml page
+  - Add '-b' command line switch to run non-interactively
+  - Remove length check on UDID argument to support newer devices
+  - Set CURLOPT_FOLLOWLOCATION to handle 302 redirects from Apples activation server
+  - Add new 'state' command to query device for activation state
+  - Lots of other bug fixes
+
+Version 1.0.0
+~~~~~~~~~~~~~
+
+* Changes:
+  - Add basic man page for ideviceactivation tool
+  - Avoid exporting-non-public symbols
+  - Add "--version" argument to print version number in ideviceactivation tool
+  - Add "--service" argument to allow setting custom activaton service URL
+
+Version 0.9.0
+~~~~~~~~~~~~~
+
+* Changes:
+  - Refactor interface to allow handling forms
+  - BuddyML and HTML parsing support
+  - Minor fixes
+
+Version 0.5.0
+~~~~~~~~~~~~~
+
+* Changes:
+  - Add debug level setter to enable verbose curl debugging
+  - Minor fixes
+
+Version 0.1.0
+~~~~~~~~~~~~~
+
+* Changes:
+  - Implement basic API to interact with activation webservice
+  - Add basic ideviceactivation tool
+  - Setup build system

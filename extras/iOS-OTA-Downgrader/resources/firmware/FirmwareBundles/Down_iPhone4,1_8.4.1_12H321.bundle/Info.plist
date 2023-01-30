@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>RootFilesystem</key>
+	<string>058-24033-023.dmg</string>
+	<key>RootFilesystemSize</key>
+	<integer>2011</integer>
+	<key>Filename</key>
+	<string>iPhone4,1_8.4.1_12H321_Restore.ipsw</string>
+	<key>RamdiskMountVolume</key>
+	<string>ramdisk</string>
+	<key>Name</key>
+	<string>iPhone4,1_8.4.1_12H321</string>
+	<key>SubPlatform</key>
+	<integer>6</integer>
+	<key>Platform</key>
+	<integer>1</integer>
+	<key>RamdiskOptionsPath</key>
+	<string>/usr/local/share/restore/options.n94.plist</string>
+	<key>SHA1</key>
+	<string>0858ce92863751e3f1b750b5ee3cc3e44800a52d</string>
+	<key>RamdiskPatches</key>
+	<dict>
+		<key>asr</key>
+		<dict>
+			<key>File</key>
+			<string>usr/sbin/asr</string>
+			<key>Patch</key>
+			<string>asr.patch</string>
+		</dict>
+	</dict>
+	<key>DownloadUrl</key>
+	<string></string>
+	<key>FilesystemPatches</key>
+	<dict/>
+	<key>RootFilesystemMountVolume</key>
+	<string>Donner12H321.N94APOS</string>
+	<key>FirmwarePatches</key>
+	<dict>
+		<key>Restore Ramdisk</key>
+		<dict>
+			<key>File</key>
+			<string>058-24341-023.dmg</string>
+			<key>Key</key>
+			<string>fd818ba545ecd87da334de24dd144dde7af6844778319c6eb2de7f82e39eb92f</string>
+			<key>Decrypt</key>
+			<true/>
+			<key>TypeFlag</key>
+			<integer>8</integer>
+			<key>IV</key>
+			<string>b41ffb8429157ff7677db6c7a654d1b4</string>
+		</dict>
+	</dict>
+	<key>RootFilesystemKey</key>
+	<string>8fd9823be521060b9160272962fc2f65520de7b5ab55fe574953997e3ee5306d7bab5e02</string>
+	<key>needPref</key>
+	<true/>
+</dict>
+</plist>
